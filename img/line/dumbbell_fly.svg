@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ダンベルフライ：あお向けで腕を横に開き、胸の上で閉じる（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <g stroke="#555" stroke-width="6"><rect x="150" y="262" width="100" height="16" rx="6" fill="#d9dde3"/><path d="M200 278 V345 M165 345 H235"/></g>
+  <g stroke="#aab" stroke-width="5" stroke-dasharray="2 12"><path d="M170 238 L182 170 L188 118"/><path d="M230 238 L218 170 L212 118"/></g>
+  <ellipse cx="200" cy="245" rx="52" ry="24" fill="#e7f0fb"/>
+  <circle cx="200" cy="228" r="28" fill="#fff"/>
+  <path d="M165 242 L112 240 L62 212"/>
+  <path d="M235 242 L288 240 L338 212"/>
+  <g stroke="#555" stroke-width="5" fill="#555"><rect x="42" y="190" width="30" height="11" rx="3"/><rect x="42" y="217" width="30" height="11" rx="3"/><rect x="328" y="190" width="30" height="11" rx="3"/><rect x="328" y="217" width="30" height="11" rx="3"/></g>
+  <g stroke="#d6336c" stroke-width="5"><path d="M80 170 Q110 95 165 88"/><path d="M149 80 L166 88 L152 100"/><path d="M320 170 Q290 95 235 88"/><path d="M251 80 L234 88 L248 100"/></g>
+</svg>

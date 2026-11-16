@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ディップス：平行なバーに手をつき、ひじを曲げて体を沈め、押し戻す（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <g stroke="#555" stroke-width="9"><path d="M118 188 V345 M282 188 V345 M100 188 H136 M264 188 H300"/></g>
+  <path d="M158 100 H242 Q252 100 250 112 L236 212 H164 L150 112 Q148 100 158 100 Z" fill="#e7f0fb"/>
+  <path d="M182 212 L178 270 L165 305"/>
+  <path d="M218 212 L222 270 L235 305"/>
+  <path d="M156 112 L122 140 L118 184"/>
+  <path d="M244 112 L278 140 L282 184"/>
+  <circle cx="200" cy="56" r="32" fill="#fff"/>
+  <g stroke="#d6336c" stroke-width="5"><path d="M345 80 L345 170"/><path d="M337.3 156.0 L345 170 L352.7 156.0"/><path d="M352.7 94.0 L345 80 L337.3 94.0"/></g>
+</svg>

@@ -1,7 +1,7 @@
 // 画面と通信。記録の計算は store.js に置く。
 import * as S from './store.js';
 
-export const APP_VERSION = '0.1.0';
+export const APP_VERSION = '0.1.1';
 const KEY_SETS = 'kintore.sets';
 const KEY_CFG = 'kintore.cfg';
 const CHUNK = 200; // 1 回の送信で送る行数の上限

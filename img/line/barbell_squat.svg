@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- バーベルスクワット：バーベルを肩にかつぎ、しゃがんで立ち上がる（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <path d="M165 248 L250 258 L205 338 L250 340"/>
+  <path d="M165 245 L212 150" stroke-width="40"/><path d="M165 245 L212 150" stroke="#e7f0fb" stroke-width="26"/>
+  <circle cx="205" cy="148" r="34" fill="#555" stroke="#555"/><circle cx="205" cy="148" r="7" fill="#fff" stroke="#fff"/>
+  <circle cx="238" cy="108" r="28" fill="#fff"/>
+  <path d="M212 160 L240 190 L218 156"/>
+  <g stroke="#d6336c" stroke-width="5"><path d="M320 120 L320 230"/><path d="M312.3 216.0 L320 230 L327.7 216.0"/><path d="M327.7 134.0 L320 120 L312.3 134.0"/></g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 懸垂：バーにぶら下がり、あごがバーを越えるまで体を引き上げる（自作の線画。make_line.mjs で作る） -->
+  <path d="M70 62 H330" stroke="#555" stroke-width="10"/>
+  <g stroke="#aab" stroke-width="5" stroke-dasharray="2 12"><path d="M150 250 L140 150 L135 70"/><path d="M250 250 L260 150 L265 70"/><circle cx="200" cy="215" r="30"/></g>
+  <path d="M158 118 H242 Q252 118 250 130 L236 230 H164 L150 130 Q148 118 158 118 Z" fill="#e7f0fb"/>
+  <path d="M182 230 L178 320 L165 350"/>
+  <path d="M218 230 L222 320 L235 350"/>
+  <path d="M156 130 L118 118 L135 64"/>
+  <path d="M244 130 L282 118 L265 64"/>
+  <circle cx="200" cy="62" r="32" fill="#fff"/>
+  <g stroke="#d6336c" stroke-width="5"><path d="M335 300 L335 170"/><path d="M342.7 184.0 L335 170 L327.3 184.0"/></g>
+</svg>

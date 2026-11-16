@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ランジ：片足を大きく前に踏み出して腰を落とし、戻る（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <path d="M190 222 L150 300 L85 322 L70 340"/>
+  <path d="M195 222 L275 228 L275 338 L305 340"/>
+  <path d="M192 215 L192 118" stroke-width="40"/><path d="M192 215 L192 118" stroke="#e7f0fb" stroke-width="26"/>
+  <circle cx="192" cy="68" r="28" fill="#fff"/>
+  <path d="M192 125 L215 170 L200 212"/>
+  <g stroke="#d6336c" stroke-width="5"><path d="M335 110 L335 205"/><path d="M327.3 191.0 L335 205 L342.7 191.0"/><path d="M342.7 124.0 L335 110 L327.3 124.0"/></g>
+</svg>
