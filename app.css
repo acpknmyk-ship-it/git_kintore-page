@@ -1,0 +1,89 @@
+:root {
+  --bg: #f4f5f7; --card: #fff; --line: #d0d7de; --text: #1f2328; --sub: #57606a;
+  --main: #1f6feb; --main-text: #fff; --warn-bg: #fff4d6; --ok-bg: #e6f4ea; --danger: #c62828; --hit: #e8590c;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text); line-height: 1.6;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", sans-serif; font-size: 16px;
+  padding-bottom: calc(64px + env(safe-area-inset-bottom));
+}
+header { background: var(--main); color: var(--main-text); padding: calc(8px + env(safe-area-inset-top)) 16px 8px; }
+header h1 { margin: 0; font-size: 18px; }
+main { padding: 12px 16px; max-width: 720px; margin: 0 auto; }
+h2 { font-size: 20px; margin: 8px 0; }
+h3 { font-size: 16px; margin: 20px 0 6px; }
+button, input, textarea { font: inherit; color: inherit; }
+button { min-height: 44px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+button.primary { width: 100%; background: var(--main); color: var(--main-text); border-color: var(--main); font-weight: 700; min-height: 52px; }
+button.danger { color: var(--danger); }
+input, textarea { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid #8c959f; border-radius: 10px; background: #fff; }
+.empty, .note { color: var(--sub); font-size: 14px; }
+.error { color: var(--danger); font-weight: 700; margin: 4px 0; min-height: 1em; }
+
+.syncbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 16px; font-size: 14px; min-height: 36px; }
+.syncbar.ok { background: var(--ok-bg); } .syncbar.warn { background: var(--warn-bg); } .syncbar.info { background: #e7f0fb; }
+.syncbar button { min-height: 32px; padding: 2px 12px; }
+
+.daybox { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 10px; }
+.daybox label { display: flex; align-items: center; gap: 8px; font-size: 14px; white-space: nowrap; }
+.daybox input { width: auto; }
+.daynote { font-size: 14px; color: var(--sub); }
+
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 8px; }
+.chip { flex: none; border-radius: 99px; min-height: 40px; }
+.chip.on { background: var(--text); color: #fff; border-color: var(--text); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 8px; color: inherit; text-decoration: none; }
+.pic { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+.pic img, .pic svg { width: 100%; height: 100%; object-fit: contain; }
+.cname { font-weight: 700; font-size: 15px; line-height: 1.3; margin-top: 4px; }
+.tags { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; }
+.tag { display: inline-block; font-size: 12px; font-weight: 400; border-radius: 99px; padding: 1px 10px; background: #eaeef2; vertical-align: middle; }
+.tag.done { background: var(--ok-bg); font-weight: 700; }
+
+.back { display: inline-block; padding: 10px 0; color: var(--main); text-decoration: none; }
+.exhead { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px; }
+.expic { width: 150px; height: 150px; object-fit: contain; flex: none; }
+.part { display: flex; align-items: center; gap: 10px; font-size: 14px; flex: 1; min-width: 200px; }
+.part svg { width: 130px; flex: none; }
+.how { margin: 10px 0; }
+.last { background: #e7f0fb; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; }
+.memo { color: var(--sub); font-size: 14px; }
+
+.sets { list-style: none; margin: 0; padding: 0; }
+.sets li { display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 6px 8px 6px 12px; margin-bottom: 6px; }
+.sets li.empty { border-style: dashed; padding: 12px; }
+.sets li.editing { border-color: var(--main); border-width: 2px; }
+.sets .no { width: 26px; height: 26px; border-radius: 50%; background: #eaeef2; text-align: center; font-size: 14px; line-height: 26px; flex: none; }
+.sets .val { flex: 1; font-size: 18px; font-weight: 700; }
+
+.setform { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px; margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+.setform .note { margin: 0; }
+.field label { font-size: 14px; font-weight: 700; }
+.stepper { display: flex; gap: 6px; }
+.stepper input { text-align: center; font-size: 22px; font-weight: 700; flex: 1; min-width: 0; }
+.stepper button { flex: none; min-width: 64px; }
+.memobox { display: block; margin-top: 14px; font-size: 14px; font-weight: 700; }
+.memobox textarea { font-weight: 400; margin-top: 4px; }
+
+.day { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 12px 10px; margin-bottom: 10px; }
+.day h3 { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.day h3 button { min-height: 36px; font-size: 14px; font-weight: 400; }
+.hrow { display: flex; flex-direction: column; padding: 6px 0; border-top: 1px solid #eaeef2; }
+
+.cfgform { display: flex; flex-direction: column; gap: 10px; }
+.cfgform label { font-size: 14px; font-weight: 700; }
+.info { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+.info dt { color: var(--sub); } .info dd { margin: 0; }
+
+nav { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
+nav a { flex: 1; text-align: center; padding: 14px 0; color: var(--sub); text-decoration: none; font-weight: 700; }
+nav a.on { color: var(--main); box-shadow: inset 0 3px 0 var(--main); }
+
+/* 鍛える部位の図（img/body.svg を埋め込んだときの色） */
+.body-map .b { fill: #eef0f3; stroke: #9aa1ab; stroke-width: 1.5; }
+.body-map .m { fill: #dfe3e8; stroke: #9aa1ab; stroke-width: 1; }
+.body-map .m.on { fill: var(--hit); stroke: #b54708; }

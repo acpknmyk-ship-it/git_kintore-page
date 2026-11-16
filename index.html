@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>筋トレ記録</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="img/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="筋トレ記録">
+  <meta name="theme-color" content="#1f6feb">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header><h1>筋トレ記録</h1></header>
+  <div id="syncbar" class="syncbar" role="status"></div>
+  <main id="app"><p class="empty">読み込み中…</p></main>
+  <nav>
+    <a href="#/" data-page="home">記録</a>
+    <a href="#/history" data-page="history">履歴</a>
+    <a href="#/settings" data-page="settings">設定</a>
+  </nav>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

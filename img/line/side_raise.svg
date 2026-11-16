@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- サイドレイズ：腕を横に肩の高さまで上げる（自作の線画） -->
+  <!-- 下ろした位置の腕（うすい点線） -->
+  <g stroke="#aab" stroke-width="5" stroke-dasharray="2 12">
+    <path d="M150 150 L128 262"/>
+    <path d="M250 150 L272 262"/>
+  </g>
+  <!-- 動きの矢印 -->
+  <g stroke="#d6336c" stroke-width="5">
+    <path d="M108 262 Q52 240 50 186"/>
+    <path d="M38 200 L50 184 L64 198"/>
+    <path d="M292 262 Q348 240 350 186"/>
+    <path d="M336 198 L350 184 L362 200"/>
+  </g>
+  <!-- 頭 -->
+  <circle cx="200" cy="78" r="38" fill="#fff"/>
+  <!-- 胴 -->
+  <path d="M152 136 H248 Q258 136 256 148 L240 252 H160 L144 148 Q142 136 152 136 Z" fill="#e7f0fb"/>
+  <!-- 腕（上げた位置） -->
+  <path d="M150 150 L100 152 L52 146"/>
+  <path d="M250 150 L300 152 L348 146"/>
+  <!-- ダンベル -->
+  <g stroke-width="6" fill="#555">
+    <rect x="38" y="128" width="12" height="36" rx="3"/>
+    <rect x="54" y="128" width="12" height="36" rx="3"/>
+    <rect x="334" y="128" width="12" height="36" rx="3"/>
+    <rect x="350" y="128" width="12" height="36" rx="3"/>
+  </g>
+  <!-- 脚 -->
+  <path d="M178 252 L172 352 L150 356"/>
+  <path d="M222 252 L228 352 L250 356"/>
+</svg>

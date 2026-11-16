@@ -1,0 +1,41 @@
+{
+  "note": "id は一度使ったら変えない・消さない（記録が id で種目を指すため）。kind: barbell=バーの重さを含む合計kg / dumbbell=片手1個のkg / body=自重（重さなし）。unit: reps=回 / sec=秒",
+  "groups": [
+    { "id": "mune", "name": "胸" },
+    { "id": "senaka", "name": "背中" },
+    { "id": "ashi", "name": "脚" },
+    { "id": "kata", "name": "肩" },
+    { "id": "ude", "name": "腕" },
+    { "id": "hara", "name": "腹" }
+  ],
+  "muscles": {
+    "mune": "胸", "kata": "肩", "ude_mae": "腕の前", "ude_ushiro": "腕のうしろ", "hara": "腹",
+    "senaka": "背中", "koshi": "腰", "shiri": "お尻", "momo_mae": "ももの前", "momo_ura": "もものうしろ", "fukurahagi": "ふくらはぎ"
+  },
+  "exercises": [
+    { "id": "bench_press", "name": "ベンチプレス", "group": "mune", "kind": "barbell", "unit": "reps", "img": "img/irasutoya/bench_press.png", "muscles": ["mune", "kata", "ude_ushiro"], "how": "ベンチにあお向けになり、バーベルを胸の上で上げ下げします。" },
+    { "id": "dumbbell_press", "name": "ダンベルプレス", "group": "mune", "kind": "dumbbell", "unit": "reps", "img": "", "muscles": ["mune", "kata", "ude_ushiro"], "how": "ベンチにあお向けになり、両手のダンベルを胸の上に押し上げます。" },
+    { "id": "dumbbell_fly", "name": "ダンベルフライ", "group": "mune", "kind": "dumbbell", "unit": "reps", "img": "", "muscles": ["mune"], "how": "あお向けで腕を横に開き、ひじを軽く曲げたまま胸の上で閉じます。" },
+    { "id": "pushup", "name": "腕立て伏せ", "group": "mune", "kind": "body", "unit": "reps", "img": "img/irasutoya/pushup.png", "muscles": ["mune", "kata", "ude_ushiro"], "how": "体をまっすぐに保ったまま、ひじを曲げて胸を床に近づけ、押し戻します。" },
+
+    { "id": "deadlift", "name": "デッドリフト", "group": "senaka", "kind": "barbell", "unit": "reps", "img": "img/irasutoya/deadlift.png", "muscles": ["senaka", "koshi", "shiri", "momo_ura"], "how": "床のバーベルを、背中をまっすぐにしたまま立ち上がって持ち上げます。" },
+    { "id": "dumbbell_row", "name": "ダンベルロウ", "group": "senaka", "kind": "dumbbell", "unit": "reps", "img": "", "muscles": ["senaka", "ude_mae"], "how": "片手と片ひざをベンチにつき、反対の手のダンベルをわき腹へ引き上げます。" },
+    { "id": "pullup", "name": "懸垂", "group": "senaka", "kind": "body", "unit": "reps", "img": "", "muscles": ["senaka", "ude_mae"], "how": "バーにぶら下がり、あごがバーを越えるまで体を引き上げます。" },
+    { "id": "back_extension", "name": "バックエクステンション", "group": "senaka", "kind": "body", "unit": "reps", "img": "img/irasutoya/back_extension.png", "muscles": ["koshi", "senaka", "shiri"], "how": "うつ伏せになり、上半身と脚をゆっくり床から浮かせて戻します。" },
+
+    { "id": "squat", "name": "スクワット", "group": "ashi", "kind": "body", "unit": "reps", "img": "img/irasutoya/squat.png", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "足を肩幅に開き、いすに座るようにお尻を引いてしゃがみ、立ち上がります。" },
+    { "id": "barbell_squat", "name": "バーベルスクワット", "group": "ashi", "kind": "barbell", "unit": "reps", "img": "", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "バーベルを肩にかつぎ、背中をまっすぐにしたまましゃがんで立ち上がります。" },
+    { "id": "lunge", "name": "ランジ", "group": "ashi", "kind": "body", "unit": "reps", "img": "", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "片足を大きく前に踏み出して腰を落とし、元の位置に戻ります。左右で 1 回と数えます。" },
+    { "id": "calf_raise", "name": "カーフレイズ", "group": "ashi", "kind": "body", "unit": "reps", "img": "img/irasutoya/calf_raise.png", "muscles": ["fukurahagi"], "how": "まっすぐ立ち、かかとを高く上げてつま先立ちになり、ゆっくり下ろします。" },
+
+    { "id": "dumbbell_shoulder_press", "name": "ダンベルショルダープレス", "group": "kata", "kind": "dumbbell", "unit": "reps", "img": "img/irasutoya/dumbbell_shoulder_press.png", "muscles": ["kata", "ude_ushiro"], "how": "ダンベルを肩の高さに構え、頭の上へまっすぐ押し上げます。" },
+    { "id": "back_press", "name": "バックプレス", "group": "kata", "kind": "barbell", "unit": "reps", "img": "img/irasutoya/back_press.png", "muscles": ["kata", "ude_ushiro"], "how": "座ってバーベルを首のうしろに構え、頭の上へ押し上げます。肩に痛みがあるときは行いません。" },
+    { "id": "side_raise", "name": "サイドレイズ", "group": "kata", "kind": "dumbbell", "unit": "reps", "img": "img/line/side_raise.svg", "muscles": ["kata"], "how": "ダンベルを両手に持ち、腕を横に肩の高さまで上げます。" },
+
+    { "id": "dumbbell_curl", "name": "ダンベルカール", "group": "ude", "kind": "dumbbell", "unit": "reps", "img": "img/irasutoya/dumbbell_curl.png", "muscles": ["ude_mae"], "how": "ひじをわきに付けたまま、ダンベルを肩に向けて巻き上げます。" },
+    { "id": "dips", "name": "ディップス", "group": "ude", "kind": "body", "unit": "reps", "img": "", "muscles": ["ude_ushiro", "mune", "kata"], "how": "平行なバー（またはいすの座面）に手をつき、ひじを曲げて体を沈め、押し戻します。" },
+
+    { "id": "crunch", "name": "腹筋（クランチ）", "group": "hara", "kind": "body", "unit": "reps", "img": "img/irasutoya/crunch.png", "muscles": ["hara"], "how": "あお向けでひざを立て、おへそをのぞき込むように上体を丸めます。" },
+    { "id": "plank", "name": "プランク", "group": "hara", "kind": "body", "unit": "sec", "img": "img/irasutoya/plank.png", "muscles": ["hara", "koshi"], "how": "ひじとつま先で体を支え、頭からかかとまでまっすぐに保ちます。秒数で記録します。" }
+  ]
+}
