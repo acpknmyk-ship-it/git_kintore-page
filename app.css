@@ -87,3 +87,15 @@ nav a.on { color: var(--main); box-shadow: inset 0 3px 0 var(--main); }
 .body-map .b { fill: #eef0f3; stroke: #9aa1ab; stroke-width: 1.5; }
 .body-map .m { fill: #dfe3e8; stroke: #9aa1ab; stroke-width: 1; }
 .body-map .m.on { fill: var(--hit); stroke: #b54708; }
+
+/* 記録を完了するボタンと、その日の記録の画面 */
+button.finish { width: 100%; margin-top: 16px; min-height: 52px; font-weight: 700; background: #1a7f37; color: #fff; border-color: #1a7f37; }
+.btnlink { display: block; text-align: center; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: 700; margin-top: 14px; }
+.btnlink.primary { background: var(--main); color: var(--main-text); }
+.daylink { color: var(--main); font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 0; }
+.daysum { margin: 0 0 10px; color: var(--sub); font-size: 14px; }
+.dayitem { display: flex; align-items: center; gap: 10px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px; margin-bottom: 8px; color: inherit; text-decoration: none; }
+.dayitem img { width: 64px; height: 64px; object-fit: contain; flex: none; }
+.dayitem div { flex: 1; min-width: 0; }
+.dayitem ol { margin: 2px 0 0; padding-left: 22px; font-weight: 700; }
+.dayitem .fix { flex: none; color: var(--main); font-size: 14px; }

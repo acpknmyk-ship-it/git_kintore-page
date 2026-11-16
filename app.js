@@ -1,7 +1,7 @@
 // 画面と通信。記録の計算は store.js に置く。
 import * as S from './store.js';
 
-export const APP_VERSION = '0.1.1';
+export const APP_VERSION = '0.2.0';
 const KEY_SETS = 'kintore.sets';
 const KEY_CFG = 'kintore.cfg';
 const CHUNK = 200; // 1 回の送信で送る行数の上限
@@ -125,6 +125,7 @@ function viewHome() {
     <section class="daybox">
       <label>記録する日 <input type="date" id="date" value="${ui.date}" max="${S.todayStr()}"></label>
       <span class="daynote">${isToday ? '今日' : dateLabel(ui.date) + ' の記録を入れています'}${done.size ? `：${done.size} 種目` : ''}</span>
+      ${done.size ? '<a class="daylink" href="#/day">この日の記録を見る ›</a>' : ''}
     </section>
     <div class="chips">${chips}</div>
     <div class="grid">${cards}</div>`;
@@ -178,7 +179,33 @@ function viewExercise(id) {
     </form>
     <label class="memobox">メモ（痛み・手ごたえなど）
       <textarea id="memo" rows="2" maxlength="${S.LIMITS.memoMax}">${esc(S.getMemo(sets, ui.date, id))}</textarea>
-    </label>`;
+    </label>
+    <button class="finish" type="button" data-act="finish">記録を完了する</button>`;
+}
+
+// その日にやった種目とセットを 1 枚にまとめた画面
+function viewDay() {
+  const day = S.byDate(sets).find((d) => d.date === ui.date);
+  const items = (day?.items || []).filter((i) => i.rows.length || i.memo);
+  const title = `${ui.date === S.todayStr() ? '今日' : dateLabel(ui.date)}の記録`;
+  if (!items.length) {
+    return `<h2>${title}</h2><p class="empty">この日の記録はまだありません。</p>
+      <a class="btnlink primary" href="#/">種目を選んで記録する</a>`;
+  }
+  const setCount = items.reduce((n, i) => n + i.rows.length, 0);
+  return `
+    <h2>${title}</h2>
+    <p class="daysum">${ui.date}　${items.filter((i) => i.rows.length).length} 種目・${setCount} セット</p>
+    ${items.map((i) => {
+      const e = exOf(i.ex);
+      return `<a class="dayitem" href="#/ex/${esc(i.ex)}">
+        ${e?.img ? `<img src="${esc(e.img)}" alt="">` : ''}
+        <div><b>${esc(e?.name || i.ex)}</b>
+          <ol>${i.rows.map((r) => `<li>${esc(S.setText(r, e))}</li>`).join('')}</ol>
+          ${i.memo ? `<span class="memo">メモ：${esc(i.memo)}</span>` : ''}
+        </div><span class="fix">直す ›</span></a>`;
+    }).join('')}
+    <a class="btnlink primary" href="#/">別の種目を記録する</a>`;
 }
 
 function viewHistory() {
@@ -218,8 +245,9 @@ function viewSettings() {
 function route() {
   const hash = location.hash || '#/';
   const [, page, id] = hash.split('/');
-  document.querySelectorAll('nav a').forEach((a) => a.classList.toggle('on', a.dataset.page === (page || 'home') || (page === 'ex' && a.dataset.page === 'home')));
+  document.querySelectorAll('nav a').forEach((a) => a.classList.toggle('on', a.dataset.page === (page || 'home') || ((page === 'ex' || page === 'day') && a.dataset.page === 'home')));
   if (page === 'ex') $app.innerHTML = viewExercise(id);
+  else if (page === 'day') $app.innerHTML = viewDay();
   else if (page === 'history') $app.innerHTML = viewHistory();
   else if (page === 'settings') $app.innerHTML = viewSettings();
   else $app.innerHTML = viewHome();
@@ -253,6 +281,14 @@ document.addEventListener('click', (ev) => {
     sets = S.deleteSet(sets, b.dataset.id);
     if (ui.editId === b.dataset.id) ui.editId = null;
     save(); route(); syncSoon();
+  } else if (act === 'finish') {
+    // 入力中のメモを先に保存してから、その日の記録の画面へ移り、すぐ送る
+    const memo = document.getElementById('memo');
+    if (memo) sets = S.setMemo(sets, ui.date, $app.dataset.ex, memo.value);
+    ui.editId = null;
+    save();
+    location.hash = '#/day';
+    sync();
   } else if (act === 'goto') { ui.date = b.dataset.date; ui.editId = null; location.hash = '#/'; route(); }
 });
 
