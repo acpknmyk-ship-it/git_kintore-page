@@ -24,6 +24,8 @@
     { "id": "back_extension", "name": "バックエクステンション", "group": "senaka", "kind": "body", "unit": "reps", "img": "img/irasutoya/back_extension.png", "muscles": ["koshi", "senaka", "shiri"], "how": "うつ伏せになり、上半身と脚をゆっくり床から浮かせて戻します。" },
 
     { "id": "squat", "name": "スクワット", "group": "ashi", "kind": "body", "unit": "reps", "img": "img/irasutoya/squat.png", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "足を肩幅に開き、いすに座るようにお尻を引いてしゃがみ、立ち上がります。" },
+    { "id": "goblet_squat", "name": "ゴブレットスクワット", "group": "ashi", "kind": "dumbbell", "unit": "reps", "img": "img/line/goblet_squat.svg", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "ダンベル 1 個を胸の前で縦に持ち、背中をまっすぐにしたまましゃがんで立ち上がります。重さはその 1 個の kg を入れます。" },
+    { "id": "cossack_squat", "name": "ダンベルコサックスクワット", "group": "ashi", "kind": "dumbbell", "unit": "reps", "img": "img/line/cossack_squat.svg", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "足を大きく開いてダンベル 1 個を胸の前で持ち、片足に体重をのせて深くしゃがみます。反対の足はまっすぐ伸ばしたままにします。左右で 1 回と数えます。" },
     { "id": "barbell_squat", "name": "バーベルスクワット", "group": "ashi", "kind": "barbell", "unit": "reps", "img": "img/line/barbell_squat.svg", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "バーベルを肩にかつぎ、背中をまっすぐにしたまましゃがんで立ち上がります。" },
     { "id": "lunge", "name": "ランジ", "group": "ashi", "kind": "body", "unit": "reps", "img": "img/line/lunge.svg", "muscles": ["momo_mae", "shiri", "momo_ura"], "how": "片足を大きく前に踏み出して腰を落とし、元の位置に戻ります。左右で 1 回と数えます。" },
     { "id": "calf_raise", "name": "カーフレイズ", "group": "ashi", "kind": "body", "unit": "reps", "img": "img/irasutoya/calf_raise.png", "muscles": ["fukurahagi"], "how": "まっすぐ立ち、かかとを高く上げてつま先立ちになり、ゆっくり下ろします。" },
@@ -36,6 +38,11 @@
     { "id": "dips", "name": "ディップス", "group": "ude", "kind": "body", "unit": "reps", "img": "img/line/dips.svg", "muscles": ["ude_ushiro", "mune", "kata"], "how": "平行なバー（またはいすの座面）に手をつき、ひじを曲げて体を沈め、押し戻します。" },
 
     { "id": "crunch", "name": "腹筋（クランチ）", "group": "hara", "kind": "body", "unit": "reps", "img": "img/irasutoya/crunch.png", "muscles": ["hara"], "how": "あお向けでひざを立て、おへそをのぞき込むように上体を丸めます。" },
-    { "id": "plank", "name": "プランク", "group": "hara", "kind": "body", "unit": "sec", "img": "img/irasutoya/plank.png", "muscles": ["hara", "koshi"], "how": "ひじとつま先で体を支え、頭からかかとまでまっすぐに保ちます。秒数で記録します。" }
+    { "id": "plank", "name": "プランク", "group": "hara", "kind": "body", "unit": "sec", "img": "img/irasutoya/plank.png", "muscles": ["hara", "koshi"], "how": "ひじとつま先で体を支え、頭からかかとまでまっすぐに保ちます。秒数で記録します。" },
+    { "id": "hollow_rock", "name": "ホローロック", "group": "hara", "kind": "body", "unit": "reps", "img": "img/line/hollow_rock.svg", "muscles": ["hara"], "how": "あお向けで腰を床に押しつけ、手足を伸ばして浮かせます。体をバナナのように丸めたまま、前後にゆれます。1 往復で 1 回と数えます。" },
+    { "id": "dead_bug", "name": "デッドバグ", "group": "hara", "kind": "body", "unit": "reps", "img": "img/line/dead_bug.svg", "muscles": ["hara"], "how": "あお向けで両腕を天井へ伸ばし、ひざを直角に曲げて上げます。腰を床から離さずに、反対側の手と足をゆっくり伸ばして戻します。左右で 1 回と数えます。" },
+    { "id": "russian_twist", "name": "ロシアンツイスト", "group": "hara", "kind": "body", "unit": "reps", "img": "img/line/russian_twist.svg", "muscles": ["hara"], "how": "床に座って上体を少し後ろに倒し、足を浮かせます。胸の前で手を組み、上体を左右にひねって、わき腹を鍛えます。左右で 1 回と数えます。" },
+    { "id": "side_bend", "name": "サイドベント", "group": "hara", "kind": "dumbbell", "unit": "reps", "img": "img/line/side_bend.svg", "muscles": ["hara", "koshi"], "how": "ダンベルを片手に持って立ち、上体を真横に倒して起こし、わき腹を鍛えます。前かがみにならないようにします。片側ずつ同じ回数行います。" },
+    { "id": "plank_row", "name": "プランクロウ", "group": "hara", "kind": "dumbbell", "unit": "reps", "img": "img/line/plank_row.svg", "muscles": ["hara", "senaka", "ude_mae"], "how": "ダンベルを握って腕立て伏せの姿勢になり、体が傾かないように保ったまま、片手ずつダンベルをわき腹へ引き上げます。左右で 1 回と数えます。" }
   ]
 }

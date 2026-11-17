@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- サイドベント：ダンベルを片手に持ち、上体を真横に倒して起こす（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <g stroke="#aab" stroke-width="5" stroke-dasharray="2 12"><circle cx="200" cy="80" r="30"/></g>
+  <path d="M182 228 L180 338 L165 340"/>
+  <path d="M218 228 L220 338 L235 340"/>
+  <g transform="rotate(-18 200 230)"><path d="M158 124 H242 Q252 124 250 136 L236 236 H164 L150 136 Q148 124 158 124 Z" fill="#e7f0fb"/><path d="M156 136 L146 190 L144 242"/><g stroke="#555" stroke-width="5" fill="#555"><rect x="118" y="241" width="11" height="30" rx="3"/><rect x="159" y="241" width="11" height="30" rx="3"/><path d="M129 256 H159"/></g><path d="M244 136 L274 176 L246 208"/><circle cx="200" cy="80" r="30" fill="#fff"/></g>
+  <g stroke="#d6336c" stroke-width="5"><path d="M290 70 Q230 10 120 40"/><path d="M131.5 28.9 L120 40 L135.6 43.7"/></g>
+</svg>

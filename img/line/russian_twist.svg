@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ロシアンツイスト：座って足を浮かせ、上体を左右にひねる（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <path d="M205 330 L268 272 L330 296"/>
+  <path d="M205 328 L152 240" stroke-width="40"/><path d="M205 328 L152 240" stroke="#e7f0fb" stroke-width="26"/>
+  <circle cx="130" cy="200" r="28" fill="#fff"/>
+  <path d="M160 252 L205 290 L228 268"/>
+  <circle cx="232" cy="265" r="10" fill="#fff"/>
+  <g stroke="#d6336c" stroke-width="5"><path d="M175 175 Q225 145 280 180"/><path d="M264.0 178.9 L280 180 L272.3 166.0"/><path d="M183.1 161.2 L175 175 L191.0 174.4"/></g>
+</svg>

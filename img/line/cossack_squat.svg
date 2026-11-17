@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ダンベルコサックスクワット：足を大きく開き、片足ずつ深くしゃがむ（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <path d="M132 242 L88 288 L108 338 L88 340"/>
+  <path d="M168 242 L325 336 L334 314"/>
+  <g transform="translate(-50 0)"><path d="M158 130 H242 Q252 130 250 142 L236 242 H164 L150 142 Q148 130 158 130 Z" fill="#e7f0fb"/></g>
+  <path d="M108 144 L118 205 L142 196"/>
+  <path d="M192 144 L182 205 L158 196"/>
+  <g stroke="#555" stroke-width="5" fill="#555"><rect x="124" y="181" width="11" height="30" rx="3"/><rect x="165" y="181" width="11" height="30" rx="3"/><path d="M135 196 H165"/></g>
+  <circle cx="150" cy="86" r="30" fill="#fff"/>
+  <g stroke="#d6336c" stroke-width="5"><path d="M240 150 L345 150"/><path d="M331.0 157.7 L345 150 L331.0 142.3"/><path d="M254.0 142.3 L240 150 L254.0 157.7"/></g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ホローロック：あお向けで手足を浮かせ、体を丸めたまま前後にゆれる（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <path d="M228 322 L290 290 L348 250"/>
+  <path d="M145 300 L228 324" stroke-width="40"/><path d="M145 300 L228 324" stroke="#e7f0fb" stroke-width="26"/>
+  <circle cx="108" cy="282" r="28" fill="#fff"/>
+  <path d="M150 296 L100 258 L55 225"/>
+  <g stroke="#d6336c" stroke-width="5"><path d="M130 215 Q200 180 270 215"/><path d="M254.0 215.6 L270 215 L260.9 201.9"/><path d="M139.1 201.9 L130 215 L146.0 215.6"/></g>
+</svg>

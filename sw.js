@@ -1,7 +1,7 @@
 // 電波が無くても画面を開けるようにする。
 // 方針：電波があれば必ず新しいものを取りに行き、取れたら保存する。取れないときだけ保存したものを出す。
 // （保存を先に出す作りにすると、直した画面が届かなくなるため）
-const CACHE = 'kintore-v3';
+const CACHE = 'kintore-v4';
 const FIRST = ['./', 'index.html', 'app.css', 'app.js', 'store.js', 'exercises.json', 'img/body.svg', 'manifest.webmanifest'];
 
 self.addEventListener('install', (ev) => {

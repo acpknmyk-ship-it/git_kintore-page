@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- プランクロウ：ダンベルを握った腕立ての姿勢で、片手ずつわき腹へ引く（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <g stroke="#aab" stroke-width="5" stroke-dasharray="2 12"><path d="M158 240 L160 318"/></g>
+  <g stroke="#aab" stroke-width="4" stroke-dasharray="2 9" fill="none"><rect x="134" y="315" width="11" height="30" rx="3"/><rect x="175" y="315" width="11" height="30" rx="3"/><path d="M145 330 H175"/></g>
+  <path d="M250 252 L340 326 L352 340"/>
+  <path d="M130 232 L250 252" stroke-width="40"/><path d="M130 232 L250 252" stroke="#e7f0fb" stroke-width="26"/>
+  <circle cx="90" cy="218" r="28" fill="#fff"/>
+  <path d="M135 238 L135 318"/>
+  <g stroke="#555" stroke-width="5" fill="#555"><rect x="109" y="315" width="11" height="30" rx="3"/><rect x="150" y="315" width="11" height="30" rx="3"/><path d="M120 330 H150"/></g>
+  <path d="M155 240 L205 200 L178 248"/>
+  <g stroke="#555" stroke-width="5" fill="#555"><rect x="152" y="243" width="11" height="30" rx="3"/><rect x="193" y="243" width="11" height="30" rx="3"/><path d="M163 258 H193"/></g>
+  <g stroke="#d6336c" stroke-width="5"><path d="M225 320 L225 225"/><path d="M232.7 239.0 L225 225 L217.3 239.0"/></g>
+</svg>

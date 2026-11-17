@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#333" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ゴブレットスクワット：ダンベル 1 個を胸の前で持ち、しゃがんで立ち上がる（自作の線画。make_line.mjs で作る） -->
+  <path d="M40 345 H360" stroke="#c5cad1" stroke-width="4"/>
+  <path d="M165 248 L250 258 L205 338 L250 340"/>
+  <path d="M165 245 L212 150" stroke-width="40"/><path d="M165 245 L212 150" stroke="#e7f0fb" stroke-width="26"/>
+  <circle cx="238" cy="108" r="28" fill="#fff"/>
+  <path d="M210 162 L236 222 L250 186"/>
+  <g transform="rotate(90 258 186)"><g stroke="#555" stroke-width="5" fill="#555"><rect x="232" y="171" width="11" height="30" rx="3"/><rect x="273" y="171" width="11" height="30" rx="3"/><path d="M243 186 H273"/></g></g>
+  <g stroke="#d6336c" stroke-width="5"><path d="M330 120 L330 230"/><path d="M322.3 216.0 L330 230 L337.7 216.0"/><path d="M337.7 134.0 L330 120 L322.3 134.0"/></g>
+</svg>
