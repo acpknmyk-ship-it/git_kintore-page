@@ -7,7 +7,9 @@
   <path d="M140 318 L250 318" stroke-width="40"/><path d="M140 318 L250 318" stroke="#e7f0fb" stroke-width="26"/>
   <circle cx="100" cy="310" r="28" fill="#fff"/>
   <path d="M150 302 L150 200"/>
-  <path d="M145 304 L95 300 L48 312"/>
+  <g stroke="#555" stroke-width="5" fill="#555"><rect x="124" y="177" width="11" height="30" rx="3"/><rect x="165" y="177" width="11" height="30" rx="3"/><path d="M135 192 H165"/></g>
+  <path d="M145 304 L95 300 L58 306"/>
+  <g stroke="#555" stroke-width="5" fill="#555"><rect x="20" y="291" width="11" height="30" rx="3"/><rect x="61" y="291" width="11" height="30" rx="3"/><path d="M31 306 H61"/></g>
   <g stroke="#d6336c" stroke-width="5"><path d="M80 250 Q105 205 145 185"/><path d="M135.9 198.1 L145 185 L129.0 184.4"/><path d="M80.1 234.0 L80 250 L93.5 241.5"/></g>
   <g stroke="#d6336c" stroke-width="5"><path d="M355 285 Q345 245 320 220"/><path d="M335.4 224.5 L320 220 L324.5 235.4"/><path d="M344.2 273.2 L355 285 L359.0 269.5"/></g>
 </svg>

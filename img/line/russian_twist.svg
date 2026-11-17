@@ -5,6 +5,6 @@
   <path d="M205 328 L152 240" stroke-width="40"/><path d="M205 328 L152 240" stroke="#e7f0fb" stroke-width="26"/>
   <circle cx="130" cy="200" r="28" fill="#fff"/>
   <path d="M160 252 L205 290 L228 268"/>
-  <circle cx="232" cy="265" r="10" fill="#fff"/>
+  <g transform="rotate(90 238 262)"><g stroke="#555" stroke-width="5" fill="#555"><rect x="212" y="247" width="11" height="30" rx="3"/><rect x="253" y="247" width="11" height="30" rx="3"/><path d="M223 262 H253"/></g></g>
   <g stroke="#d6336c" stroke-width="5"><path d="M175 175 Q225 145 280 180"/><path d="M264.0 178.9 L280 180 L272.3 166.0"/><path d="M183.1 161.2 L175 175 L191.0 174.4"/></g>
 </svg>

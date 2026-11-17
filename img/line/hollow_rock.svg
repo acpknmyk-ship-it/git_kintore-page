@@ -5,5 +5,6 @@
   <path d="M145 300 L228 324" stroke-width="40"/><path d="M145 300 L228 324" stroke="#e7f0fb" stroke-width="26"/>
   <circle cx="108" cy="282" r="28" fill="#fff"/>
   <path d="M150 296 L100 258 L55 225"/>
+  <g stroke="#555" stroke-width="5" fill="#555"><rect x="22" y="203" width="11" height="30" rx="3"/><rect x="63" y="203" width="11" height="30" rx="3"/><path d="M33 218 H63"/></g>
   <g stroke="#d6336c" stroke-width="5"><path d="M130 215 Q200 180 270 215"/><path d="M254.0 215.6 L270 215 L260.9 201.9"/><path d="M139.1 201.9 L130 215 L146.0 215.6"/></g>
 </svg>

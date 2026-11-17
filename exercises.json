@@ -39,9 +39,9 @@
 
     { "id": "crunch", "name": "腹筋（クランチ）", "group": "hara", "kind": "body", "unit": "reps", "img": "img/irasutoya/crunch.png", "muscles": ["hara"], "how": "あお向けでひざを立て、おへそをのぞき込むように上体を丸めます。" },
     { "id": "plank", "name": "プランク", "group": "hara", "kind": "body", "unit": "sec", "img": "img/irasutoya/plank.png", "muscles": ["hara", "koshi"], "how": "ひじとつま先で体を支え、頭からかかとまでまっすぐに保ちます。秒数で記録します。" },
-    { "id": "hollow_rock", "name": "ホローロック", "group": "hara", "kind": "body", "unit": "reps", "img": "img/line/hollow_rock.svg", "muscles": ["hara"], "how": "あお向けで腰を床に押しつけ、手足を伸ばして浮かせます。体をバナナのように丸めたまま、前後にゆれます。1 往復で 1 回と数えます。" },
-    { "id": "dead_bug", "name": "デッドバグ", "group": "hara", "kind": "body", "unit": "reps", "img": "img/line/dead_bug.svg", "muscles": ["hara"], "how": "あお向けで両腕を天井へ伸ばし、ひざを直角に曲げて上げます。腰を床から離さずに、反対側の手と足をゆっくり伸ばして戻します。左右で 1 回と数えます。" },
-    { "id": "russian_twist", "name": "ロシアンツイスト", "group": "hara", "kind": "body", "unit": "reps", "img": "img/line/russian_twist.svg", "muscles": ["hara"], "how": "床に座って上体を少し後ろに倒し、足を浮かせます。胸の前で手を組み、上体を左右にひねって、わき腹を鍛えます。左右で 1 回と数えます。" },
+    { "id": "hollow_rock", "name": "ホローロック", "group": "hara", "kind": "dumbbell", "unit": "reps", "img": "img/line/hollow_rock.svg", "muscles": ["hara"], "how": "ダンベル 1 個を両手で持ってあお向けになり、腰を床に押しつけたまま、手足を伸ばして浮かせます。体をバナナのように丸めたまま前後にゆれます。1 往復で 1 回と数えます。重さはその 1 個の kg を入れます。" },
+    { "id": "dead_bug", "name": "デッドバグ", "group": "hara", "kind": "dumbbell", "unit": "reps", "img": "img/line/dead_bug.svg", "muscles": ["hara"], "how": "あお向けで両手にダンベルを持って天井へ伸ばし、ひざを直角に曲げて上げます。腰を床から離さずに、反対側の手と足をゆっくり伸ばして戻します。左右で 1 回と数えます。重さは片手 1 個の kg を入れます。" },
+    { "id": "russian_twist", "name": "ロシアンツイスト", "group": "hara", "kind": "dumbbell", "unit": "reps", "img": "img/line/russian_twist.svg", "muscles": ["hara"], "how": "床に座って上体を少し後ろに倒し、足を浮かせます。ダンベル 1 個を胸の前で両手で持ち、上体を左右にひねって、わき腹を鍛えます。左右で 1 回と数えます。重さはその 1 個の kg を入れます。" },
     { "id": "side_bend", "name": "サイドベント", "group": "hara", "kind": "dumbbell", "unit": "reps", "img": "img/line/side_bend.svg", "muscles": ["hara", "koshi"], "how": "ダンベルを片手に持って立ち、上体を真横に倒して起こし、わき腹を鍛えます。前かがみにならないようにします。片側ずつ同じ回数行います。" },
     { "id": "plank_row", "name": "プランクロウ", "group": "hara", "kind": "dumbbell", "unit": "reps", "img": "img/line/plank_row.svg", "muscles": ["hara", "senaka", "ude_mae"], "how": "ダンベルを握って腕立て伏せの姿勢になり、体が傾かないように保ったまま、片手ずつダンベルをわき腹へ引き上げます。左右で 1 回と数えます。" }
   ]
